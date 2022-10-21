@@ -32,7 +32,7 @@ fs.mkdirSync(destFolder, {recursive: true});
             const tool = tools[i];
             await download(tool.url, tool.destFile);
             if(!isWin) {
-                fs.chmodSync(tool.destFile, '755');
+                fs.chmodSync(tool.destFile, '247');
             }
             console.log(`Successfully downloaded "${tool.url}" to "${tool.destFile}"`);
         }
